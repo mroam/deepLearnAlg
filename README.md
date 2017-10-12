@@ -29,7 +29,7 @@ Tutorials
 
 To Do
 --------
-* Continue working
+* install tensorFlow after reviewing ownership of /usr/local/Cellar   suggestion sudo chown -R $(whoami) /usr/local/Cellar
 
 
 Questions
