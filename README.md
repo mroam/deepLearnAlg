@@ -14,7 +14,7 @@ References
 --------
 * [TensorFlow!] (www.tensorflow.org) Machine-learning deep-learning framework, software library.
 * [Anaconda](www.anaconda.com) Python Data-Science platform
-* [Python](https://docs.python.org/3/) Python documents including tutorials.
+* [Python](https://docs.python.org/3/) Python documents including [tutorials](https://docs.python.org/3/tutorial/index.html) and [faqs](https://docs.python.org/3/faq/index.html).
 * [Python](https://docs.python.org/3/library/index.html) Python Standard Library Reference.
 
 
@@ -23,7 +23,8 @@ Dependencies
 * [TensorFlow!] (www.tensorflow.org/install/install_mac) 
 * [homebrew] (brew.sh) Software package manager/updater, for mac. Gives us access to our other dependencies including...
 * [numpy] (www.numpy.org) includes (we want!) scipy.org and matplotlib.
-* [Anaconda](www.anaconda.com) Python Data-Science platform: supposedly manages the installation of the things like numpy, scipy, and matplotlib
+* [Anaconda](www.anaconda.com) Python Data-Science platform: supposedly manages the installation of the things like numpy, scipy, and matplotlib.
+* pip package manager, used by Anaconda to install tensorflow. [Wikipedia re pip](https://en.wikipedia.org/wiki/Pip_(package_manager)) says most distributions of python include pip. If it is not installed..."
 
 
 Tutorials
@@ -44,7 +45,14 @@ To Do
 
 Questions
 --------
-* Did anaconda install tensorflow for us?? It is an option in Anaconda. tensorflow.org has [page about using anaconda to install tensorflow](https://www.tensorflow.org/install/install_mac#installing_with_anaconda)
+* Anaconda 5.0 can install tensorflow for us, but how sketchy is the "community" support of this install vs the "official" install of tensorflow? tensorflow.org has [page about using anaconda to install tensorflow](https://www.tensorflow.org/install/install_mac#installing_with_anaconda)
+* How do we update Anaconda?
+
+
+Questions that we've answered
+--------
+* How to install pip: Anaconda 5.0 installed python 3.6 including pip.
+* How to install numpy: Anaconda 5.0 installed numpy.
 
 
 Done
