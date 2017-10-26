@@ -24,7 +24,7 @@ Dependencies
 * [homebrew] (brew.sh) Software package manager/updater, for mac. Gives us access to our other dependencies including...
 * [numpy] (www.numpy.org) includes (we want!) scipy.org and matplotlib.
 * [Anaconda](www.anaconda.com) Python Data-Science platform: supposedly manages the installation of the things like numpy, scipy, and matplotlib.
-* pip package manager, used by Anaconda to install tensorflow. [Wikipedia re pip](https://en.wikipedia.org/wiki/Pip_(package_manager)) says most distributions of python include pip. If it is not installed..."
+* pip package manager, used by Anaconda to install tensorflow. [Wikipedia re pip](https://en.wikipedia.org/wiki/Pip_(package_manager)) says most distributions of python include pip. If it is not installed...."
 
 
 Tutorials
