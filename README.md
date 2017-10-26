@@ -49,6 +49,7 @@ Questions
 --------
 * Anaconda 5.0 can install tensorflow for us, but how sketchy is the "community" support of this install vs the "official" install of tensorflow? tensorflow.org has [page about using anaconda to install tensorflow](https://www.tensorflow.org/install/install_mac#installing_with_anaconda)
 * How do we update Anaconda?
+* Does the GitHub setting about hide email really hide email address from commits done by desktop GitHub? If using command line, see [email in git](https://help.github.com/articles/setting-your-email-in-git) about adjusting GitHub to hide email in command line activity.
 
 
 Questions that we've answered
