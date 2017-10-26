@@ -40,7 +40,9 @@ AnacondaNavigator (is a mac app), has a home screen. Choose "spyder"'s "Launch" 
 
 To Do
 --------
-* Install tensorFlow after reviewing ownership of /usr/local/Cellar   suggestion sudo chown -R $(whoami) /usr/local/Cellar
+* Install tensorFlow after reviewing ownership of /usr/local/Cellar   suggestion: 
+   sudo chown -R $(whoami) /usr/local/Cellar
+Note: “whoami” displays effective user id but man file says “has been obsoleted by the ‘id’ utility and is equivalent to ‘id -un’ though ‘id -p’ is suggested for normal interactive use.”
 
 
 Questions
