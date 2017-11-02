@@ -35,7 +35,7 @@ Dependencies
 
 Tutorials
 --------
-* [Udemy online course](http://www.udemy.com/deeplearning) $10 for "Deep Learning A-Z"
+* [Udemy online course](http://www.udemy.com/deeplearning) $10 for "Deep Learning A-Z" might be helped by pre-requisites including https://www.udemy.com/deep-learning-prerequisites-the-numpy-stack-in-python/ and https://www.udemy.com/data-science-linear-regression-in-python/
 * Medium.com has some deeplearning tutorials, which we haven't tried yet, including [absolute beginners guide to machine learning](https://hackernoon.com/introduction-to-numpy-1-an-absolute-beginners-guide-to-machine-learning-and-data-science-5d87f13f0d51) which starts by installing numpy and teaching about numpy arrays
 * [Getting started with tensorflow](https://www.tensorflow.org/get_started/get_started) has link to tensorflow starter tutorial.
 
@@ -48,7 +48,7 @@ AnacondaNavigator (is a mac app), has a home screen. Choose "spyder"'s "Launch" 
 
 To Do
 --------
-
+Study tutorials: we're part way into https://www.udemy.com/deep-learning-prerequisites-the-numpy-stack-in-python/
 
 
 Questions
@@ -64,10 +64,14 @@ Questions that we've answered
 * How to install numpy: Anaconda 5.0 installed numpy.
 
 
-Done
+Done (In Order!)
 ----------
 * (√) Installed homebrew (required a sudo for installation, says that package downloads will NOT need sudo).
 * (√) Installed Anaconda (did not need an admin password, offered to install python 3.6 and/or 2.7 (we installed 3.6)).
 * (√) Installed tensorFlow (after reviewing ownership of /usr/local/Cellar   suggestion was 
    sudo chown -R $(whoami) /usr/local/Cellar
 Note: “whoami” displays effective user id but man file says “has been obsoleted by the ‘id’ utility and is equivalent to ‘id -un’ though ‘id -p’ is suggested for normal interactive use.”
+* (√) Told Mac Finder to show our invisible files:
+# our account is called tensorflow, so adjusting 3rd word of the following appropriately
+defaults -host tensorflow write com.apple.finder AppleShowAllFiles -bool YES
+We're seeing that Anaconda's install of tensorflow puts lots of invisible (dot files) stuff in "~" home folder. Would have been nice if it made a single folder for all the tensorflow stuff.
