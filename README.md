@@ -6,7 +6,8 @@ Griffin and Mike are trying to study machine learning by installing libraries, r
 
 Potential Projects
 -----------------
-* 
+* Train an AI to play games.
+* Train simulated cars to deal with pedestrians and traffic. [NYTimes article](https://www.nytimes.com/2017/10/29/business/virtual-reality-driverless-cars.html)
 
 
 
@@ -16,6 +17,11 @@ References
 * [Anaconda](www.anaconda.com) Python Data-Science platform
 * [Python](https://docs.python.org/3/) Python documents including [tutorials](https://docs.python.org/3/tutorial/index.html) and [faqs](https://docs.python.org/3/faq/index.html).
 * [Python](https://docs.python.org/3/library/index.html) Python Standard Library Reference.
+
+
+Related Articles
+--------
+* [INVIDIA wants to train youth in AI](https://www.technologyreview.com/the-download/609284/nvidia-is-aiming-to-train-the-next-generation-of-ai-experts/)
 
 
 Dependencies
@@ -42,9 +48,7 @@ AnacondaNavigator (is a mac app), has a home screen. Choose "spyder"'s "Launch" 
 
 To Do
 --------
-* Install tensorFlow after reviewing ownership of /usr/local/Cellar   suggestion: 
-   sudo chown -R $(whoami) /usr/local/Cellar
-Note: “whoami” displays effective user id but man file says “has been obsoleted by the ‘id’ utility and is equivalent to ‘id -un’ though ‘id -p’ is suggested for normal interactive use.”
+
 
 
 Questions
@@ -64,3 +68,6 @@ Done
 ----------
 * (√) Installed homebrew (required a sudo for installation, says that package downloads will NOT need sudo).
 * (√) Installed Anaconda (did not need an admin password, offered to install python 3.6 and/or 2.7 (we installed 3.6)).
+* (√) Installed tensorFlow (after reviewing ownership of /usr/local/Cellar   suggestion was 
+   sudo chown -R $(whoami) /usr/local/Cellar
+Note: “whoami” displays effective user id but man file says “has been obsoleted by the ‘id’ utility and is equivalent to ‘id -un’ though ‘id -p’ is suggested for normal interactive use.”
