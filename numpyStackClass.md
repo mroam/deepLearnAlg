@@ -1,4 +1,4 @@
-https://www.udemy.com/deep-learning-prerequisites-the-numpy-stack-in-python/
+Course: https://www.udemy.com/deep-learning-prerequisites-the-numpy-stack-in-python/
 
 Notes
 --------
@@ -9,9 +9,10 @@ Lecture 1: Starts with NumPy arrays (just like that article from medium)
 * "scipy" adds stats functions to numpy
 
 Lecture 2: 
-* Suggests using ipython and has command (with sudo) for installing necessaries onto mac:
+* Suggests using [ipython](https://ipython.org/) (which runs interactive python inside the [jupyter](https://jupyter.org/) shell and notebook system) 
+* Suggests following command (preceded with sudo, but is sudo required??) for installing necessaries onto mac:
 pip install -U numpy scipy matplotlib pandas ipython
-We might not need this since we've used Anaconda to install stuff.
+We might not need this since we've used Anaconda to install stuff including tensorFlow.
 
 
 Questions: 
