@@ -50,7 +50,8 @@ AnacondaNavigator (is a mac app), has a home screen. Choose "spyder"'s "Launch" 
 
 To Do
 --------
-Study tutorials: we're part way into https://www.udemy.com/deep-learning-prerequisites-the-numpy-stack-in-python/
+* Study tutorials: we're part way into [notes numpy stack tutorial] (  ) at https://www.udemy.com/deep-learning-prerequisites-the-numpy-stack-in-python/
+* Install [ipython](https://ipython.org/) and jupyter (iPython runs interactive python inside the [jupyter](https://jupyter.org/) shell and notebook system) if necessary for the numpy stack tutorial.
 
 
 Questions
