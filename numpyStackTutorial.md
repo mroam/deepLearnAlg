@@ -17,7 +17,7 @@ We might not need this since we've used Anaconda to install stuff including tens
 
 Questions: 
 --------
-* What (in stats) is "Convolution"?
+* What (in stats) is "Convolution"? Well, it is a function that somehow combines two other functions to get a new function. Check out https://en.wikipedia.org/wiki/Convolution
 
 
 Pre-Req Knowledge to review
@@ -25,10 +25,20 @@ Pre-Req Knowledge to review
 * "Gaussian Distributions" in 1-d and 2-d
 * Python
 * Vector and matrix operations. 
-Notes: 
-* ad+be+cf = [a,b,c] dot [d,e,f]
-* [ad,be,cf] = [a,b,c] * [d,e,f]
 
+Notes re Matrix and Vector operations: 
+* [ad,be,cf] = [a,b,c] * [d,e,f]
+* dot product aka "scalar product" is called in numpy by np.dot(A,B) (also A.dot(B) or B.dot(A) and works ad+be+cf = [a,b,c] dot [d,e,f]
+* cross product aka "vector product" is np.cross(A,B) and is often written "x" and finds perpendicular vector.
+* "matrix product" is the kind of multiplication of matrices used in computer graphics, which is neither "dot" nor "cross".
+
+
+Handy Commands
+--------
+A = np.array([1,2,3])
+B = np.array([4,5,6])
+C = np.random.random(5)     // gives 5 element vector of values between 0..1
+print(A)
 
 Resources:
 --------
