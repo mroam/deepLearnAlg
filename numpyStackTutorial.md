@@ -38,7 +38,9 @@ Handy Commands
 A = np.array([1,2,3])
 B = np.array([4,5,6])
 C = np.random.random(5)     // gives 5 element vector of values between 0..1
-print(A)
+print(C)
+D = np.random.random((3,7))     // gives 3x7 matrix of values 0..1
+
 
 Resources:
 --------
