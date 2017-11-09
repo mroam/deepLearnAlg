@@ -36,7 +36,7 @@ Dependencies
 Tutorials
 --------
 * [Udemy online course](http://www.udemy.com/deeplearning) $10 for "Deep Learning A-Z" has pre-requisites including 
-* [numpy stack](https://www.udemy.com/deep-learning-prerequisites-the-numpy-stack-in-python/) . See [our notes](https://github.com/mroam/deepLearnAlg/blob/master/numpyStackClass.md) 
+* [numpy stack](https://www.udemy.com/deep-learning-prerequisites-the-numpy-stack-in-python/) . See [our notes](https://github.com/mroam/deepLearnAlg/blob/master/numpyStackTutorial.md) 
 * https://www.udemy.com/data-science-linear-regression-in-python/
 * Medium.com has some deeplearning tutorials, which we haven't tried yet, including [absolute beginners guide to machine learning](https://hackernoon.com/introduction-to-numpy-1-an-absolute-beginners-guide-to-machine-learning-and-data-science-5d87f13f0d51) which starts by installing numpy and teaching about numpy arrays
 * [Getting started with tensorflow](https://www.tensorflow.org/get_started/get_started) has link to tensorflow starter tutorial.
@@ -50,7 +50,7 @@ AnacondaNavigator (is a mac app), has a home screen. Choose "spyder"'s "Launch" 
 
 To Do
 --------
-* Study tutorials: we're part way into [notes numpy stack tutorial] (  ) at https://www.udemy.com/deep-learning-prerequisites-the-numpy-stack-in-python/
+* Study tutorials: we're part way into [notes numpy stack tutorial](https://github.com/mroam/deepLearnAlg/blob/master/numpyStackTutorial.md) at https://www.udemy.com/deep-learning-prerequisites-the-numpy-stack-in-python/
 * Install [ipython](https://ipython.org/) and jupyter (iPython runs interactive python inside the [jupyter](https://jupyter.org/) shell and notebook system) if necessary for the numpy stack tutorial.
 
 
