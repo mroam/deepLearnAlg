@@ -24,4 +24,4 @@ Pre-Req Knowledge to review
 
 Resources:
 --------
-* (Class materials)[https://github.com/lazyprogrammer/machine_learning_examples]
+* [Class materials for download](https://github.com/lazyprogrammer/machine_learning_examples)
