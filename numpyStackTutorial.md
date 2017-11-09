@@ -9,7 +9,7 @@ Lecture 1: Starts with NumPy arrays (just like that article from medium)
 * "scipy" adds stats functions to numpy
 
 Lecture 2: 
-* Suggests using [ipython](https://ipython.org/) (which runs interactive python inside the [jupyter](https://jupyter.org/) shell and notebook system) 
+* Suggests using [ipython](https://ipython.org/) (which runs interactive python inside the [jupyter](https://jupyter.org/) shell and notebook system). Anaconda installed iPython for us and provides console.
 * Suggests following command (preceded with sudo, but is sudo required??) for installing necessaries onto mac:
 pip install -U numpy scipy matplotlib pandas ipython
 We might not need this since we've used Anaconda to install stuff including tensorFlow.
@@ -24,7 +24,10 @@ Pre-Req Knowledge to review
 -------
 * "Gaussian Distributions" in 1-d and 2-d
 * Python
-* Vector and matrix operations
+* Vector and matrix operations. 
+Notes: 
+* ad+be+cf = [a,b,c] dot [d,e,f]
+* [ad,be,cf] = [a,b,c] * [d,e,f]
 
 
 Resources:
