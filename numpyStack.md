@@ -20,3 +20,8 @@ Pre-Req Knowledge to review
 * "Gaussian Distributions" in 1-d and 2-d
 * Python
 * Vector and matrix operations
+
+
+Resources:
+--------
+* (Class materials)[https://github.com/lazyprogrammer/machine_learning_examples]
