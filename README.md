@@ -13,8 +13,8 @@ Potential Projects
 
 References 
 --------
-* [TensorFlow!] (www.tensorflow.org) Machine-learning deep-learning framework, software library.
-* [Anaconda](www.anaconda.com) Python Data-Science platform
+* [TensorFlow!] (www.tensorflow.org) Google's big deal machine-learning deep-learning framework and software library.
+* [Anaconda](www.anaconda.com) Python Data-Science platform, installs many things for us.
 * [Python](https://docs.python.org/3/) Python documents including [tutorials](https://docs.python.org/3/tutorial/index.html) and [faqs](https://docs.python.org/3/faq/index.html).
 * [Python](https://docs.python.org/3/library/index.html) Python Standard Library Reference.
 
@@ -35,7 +35,7 @@ Dependencies
 
 Tutorials
 --------
-* [Udemy online course](http://www.udemy.com/deeplearning) $10 for "Deep Learning A-Z" might be helped by pre-requisites including https://www.udemy.com/deep-learning-prerequisites-the-numpy-stack-in-python/ and https://www.udemy.com/data-science-linear-regression-in-python/
+* [Udemy online course](http://www.udemy.com/deeplearning) $10 for "Deep Learning A-Z" might be helped by pre-requisites including https://www.udemy.com/deep-learning-prerequisites-the-numpy-stack-in-python/ [our notes](https://github.com/mroam/deepLearnAlg/blob/master/numpyStackClass.md) and https://www.udemy.com/data-science-linear-regression-in-python/
 * Medium.com has some deeplearning tutorials, which we haven't tried yet, including [absolute beginners guide to machine learning](https://hackernoon.com/introduction-to-numpy-1-an-absolute-beginners-guide-to-machine-learning-and-data-science-5d87f13f0d51) which starts by installing numpy and teaching about numpy arrays
 * [Getting started with tensorflow](https://www.tensorflow.org/get_started/get_started) has link to tensorflow starter tutorial.
 
