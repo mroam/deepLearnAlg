@@ -51,7 +51,8 @@ AnacondaNavigator (is a mac app), has a home screen. Choose "spyder"'s "Launch" 
 To Do
 --------
 * Study tutorials: we're part way into [notes numpy stack tutorial](https://github.com/mroam/deepLearnAlg/blob/master/numpyStackTutorial.md) at https://www.udemy.com/deep-learning-prerequisites-the-numpy-stack-in-python/
-* Install [ipython](https://ipython.org/) and jupyter (iPython runs interactive python inside the [jupyter](https://jupyter.org/) shell and notebook system) if necessary for the numpy stack tutorial.
+* Install [ipython](https://ipython.org/) and jupyter (iPython runs interactive python inside the [jupyter](https://jupyter.org/) shell and notebook system) if necessary for the numpy stack tutorial. <== wait, did Anaconda install these for us??
+* Continue trying to install tensorflow on ppp1d, getting error about "conda: command not found" while trying to follow  https://www.tensorflow.org/install/install_mac#installing_with_anaconda. Maybe it needs reboot?
 
 
 Questions
