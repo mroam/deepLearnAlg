@@ -69,7 +69,7 @@ Questions that we've answered
 
 Done (In Order!)
 ----------
-* (√) Installed [homebrew] (http://brew.sh) (required a sudo for installation, says that package downloads will NOT need sudo).
+* (√) Installed [homebrew](http://brew.sh) (required a sudo for installation, says that package downloads will NOT need sudo).
 * (√) Installed Anaconda (did not need an admin password, offered to install python 3.6 and/or 2.7 (we installed 3.6)).
 * (√) Used Anaconda to install tensorFlow (after reviewing ownership of "/usr/local/Cellar"  -- suggestion was 
 
