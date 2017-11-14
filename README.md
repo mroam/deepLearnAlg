@@ -27,7 +27,7 @@ Related Articles
 Dependencies
 --------
 * [TensorFlow!] (www.tensorflow.org/install/install_mac) 
-* [homebrew] (brew.sh) Software package manager/updater, for mac. Gives us access to our other dependencies including...
+* [homebrew] (http://brew.sh) Software package manager/updater, for mac. Gives us access to our other dependencies including...
 * [numpy] (www.numpy.org) includes (we want!) scipy.org and matplotlib.
 * [Anaconda](www.anaconda.com) Python Data-Science platform: supposedly manages the installation of the things like numpy, scipy, and matplotlib.
 * pip package manager, used by Anaconda to install tensorflow. [Wikipedia re pip](https://en.wikipedia.org/wiki/Pip_(package_manager)) says most distributions of python include pip. If it is not installed...."
@@ -69,12 +69,16 @@ Questions that we've answered
 
 Done (In Order!)
 ----------
-* (√) Installed homebrew (required a sudo for installation, says that package downloads will NOT need sudo).
+* (√) Installed [homebrew] (http://brew.sh) (required a sudo for installation, says that package downloads will NOT need sudo).
 * (√) Installed Anaconda (did not need an admin password, offered to install python 3.6 and/or 2.7 (we installed 3.6)).
-* (√) Installed tensorFlow (after reviewing ownership of /usr/local/Cellar   suggestion was 
+* (√) Used Anaconda to install tensorFlow (after reviewing ownership of "/usr/local/Cellar"  -- suggestion was 
+
    sudo chown -R $(whoami) /usr/local/Cellar
+   
 Note: “whoami” displays effective user id but man file says “has been obsoleted by the ‘id’ utility and is equivalent to ‘id -un’ though ‘id -p’ is suggested for normal interactive use.”
+
 * (√) Told Mac Finder to show our invisible files:
-# our account is called tensorflow, so adjusting 3rd word of the following appropriately
-defaults -host tensorflow write com.apple.finder AppleShowAllFiles -bool YES
-We're seeing that Anaconda's install of tensorflow puts lots of invisible (dot files) stuff in "~" home folder. Would have been nice if it made a single folder for all the tensorflow stuff.
+our account is called tensorflow, so adjusting 3rd word of the following appropriately
+
+   defaults -host tensorflow write com.apple.finder AppleShowAllFiles -bool YES
+ We're seeing that Anaconda's install of tensorflow puts lots of invisible (dot files) stuff in "~" home folder. Would have been nice if it made a single folder for all the tensorflow stuff.
