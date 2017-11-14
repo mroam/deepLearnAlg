@@ -77,9 +77,10 @@ Done (In Order!)
    sudo chown -R $(whoami) /usr/local/Cellar
    
 Note: “whoami” displays effective user id but man file says “has been obsoleted by the ‘id’ utility and is equivalent to ‘id -un’ though ‘id -p’ is suggested for normal interactive use.”
+Note: We're seeing that Anaconda's install of tensorflow puts lots of invisible (dot files) stuff in "~" home folder. Would have been nice if it made a single folder for all the tensorflow stuff.
 
 * (√) Told Mac Finder to show our invisible files:
 our account is called tensorflow, so adjusting 3rd word of the following appropriately
 
    defaults -host tensorflow write com.apple.finder AppleShowAllFiles -bool YES
- We're seeing that Anaconda's install of tensorflow puts lots of invisible (dot files) stuff in "~" home folder. Would have been nice if it made a single folder for all the tensorflow stuff.
+   
