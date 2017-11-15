@@ -67,7 +67,7 @@ Anaconda-Navigator (is a mac app), and has a home screen in which we click "spyd
 * (√) Installed Anaconda (which created ~/anaconda3 and did not need an admin password, offered to install python 3.6 and/or 2.7 (we installed 3.6)).
 * (√) Used Anaconda to install tensorFlow (after reviewing ownership of "/usr/local/Cellar"  -- suggestion was 
 
-   sudo chown -R $(whoami) /usr/local/Cellar
+   `sudo chown -R $(whoami) /usr/local/Cellar`
    
 Note: “whoami” displays effective user id but man file says “has been obsoleted by the ‘id’ utility and is equivalent to ‘id -un’ though ‘id -p’ is suggested for normal interactive use.”
 Note: We're seeing that Anaconda's install of tensorflow puts lots of invisible (dot files) stuff in "~" home folder. Would have been nice if it made a single folder for all the tensorflow stuff.
@@ -75,5 +75,5 @@ Note: We're seeing that Anaconda's install of tensorflow puts lots of invisible 
 * (√) Told Mac Finder to show our invisible files:
 our account is called tensorflow, so adjusting 3rd word of the following appropriately
 
-   defaults -host tensorflow write com.apple.finder AppleShowAllFiles -bool YES
+   `defaults -host tensorflow write com.apple.finder AppleShowAllFiles -bool YES`
    
