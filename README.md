@@ -1,18 +1,15 @@
 # deepLearnAlg
 Deep learning algorithms for video games
-========
 Griffin and Mike are trying to study machine learning by installing libraries, reading tutorials, running code, and revising code. Here is what we’ve found so far including links to installers, tutorials, versions, references, etc...
 
 
 ## Potential Projects
------------------
 * Train an AI to play games.
 * Train simulated cars to deal with pedestrians and traffic. [NYTimes article](https://www.nytimes.com/2017/10/29/business/virtual-reality-driverless-cars.html)
 
 
 
 ## References 
---------
 * [TensorFlow!] (www.tensorflow.org) Google's big deal machine-learning deep-learning framework and software library.
 * [Anaconda](www.anaconda.com) Python Data-Science platform, installs many things for us including tensorflow.
 * [Python](https://docs.python.org/3/) Python documents including [tutorials](https://docs.python.org/3/tutorial/index.html) and [faqs](https://docs.python.org/3/faq/index.html).
@@ -48,14 +45,12 @@ Anaconda-Navigator (is a mac app), and has a home screen in which we click "spyd
 
 
 ## To Do
---------
 * Study tutorials: we're part way into [notes numpy stack tutorial](https://github.com/mroam/deepLearnAlg/blob/master/numpyStackTutorial.md) at https://www.udemy.com/deep-learning-prerequisites-the-numpy-stack-in-python/
 * Install [ipython](https://ipython.org/) and [jupyter](https://jupyter.org/) (iPython runs interactive python inside the [jupyter](https://jupyter.org/) shell and notebook system) if necessary for the numpy stack tutorial. <== wait, did Anaconda install these for us??
 * Continue trying to install tensorflow on ppp1d, getting error about "conda: command not found" while trying to follow  https://www.tensorflow.org/install/install_mac#installing_with_anaconda. Maybe it needs reboot?
 
 
 ## Questions
---------
 * Is it necessary to install homebrew in order to install Anaconda? I'm trying Anaconda w/o homebrew in ppp1d. An [article in stackoverflow](https://stackoverflow.com/questions/33541876/os-x-deciding-between-anaconda-and-homebrew-python-environments) says anaconda and homebrew install separate python in different places.
 * Anaconda 5.0 can install tensorflow for us, but how sketchy is the "community" support of this install vs the "official" install of tensorflow? tensorflow.org has [page about using anaconda to install tensorflow](https://www.tensorflow.org/install/install_mac#installing_with_anaconda)
 * How do we update Anaconda? (Anaconda-Navigator self checks for updates.)
@@ -63,13 +58,11 @@ Anaconda-Navigator (is a mac app), and has a home screen in which we click "spyd
 
 
 ## Questions that we've answered
---------
 * How to install pip: Anaconda 5.0 installed python 3.6 including pip.
 * How to install numpy: Anaconda 5.0 installed numpy.
 
 
 ## Done (In Order!)
-----------
 * (√) Perhaps was unnecessary? Installed [homebrew](http://brew.sh) (required a sudo for installation, required that our computer account be an administrator (so much for student installs) "This script requires the user tensorflow to be an Administrator.", and says that package downloads will NOT need sudo).
 * (√) Installed Anaconda (which created ~/anaconda3 and did not need an admin password, offered to install python 3.6 and/or 2.7 (we installed 3.6)).
 * (√) Used Anaconda to install tensorFlow (after reviewing ownership of "/usr/local/Cellar"  -- suggestion was 
