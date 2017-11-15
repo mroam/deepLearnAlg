@@ -4,14 +4,14 @@ Deep learning algorithms for video games
 Griffin and Mike are trying to study machine learning by installing libraries, reading tutorials, running code, and revising code. Here is what we’ve found so far including links to installers, tutorials, versions, references, etc...
 
 
-Potential Projects
+## Potential Projects
 -----------------
 * Train an AI to play games.
 * Train simulated cars to deal with pedestrians and traffic. [NYTimes article](https://www.nytimes.com/2017/10/29/business/virtual-reality-driverless-cars.html)
 
 
 
-References 
+## References 
 --------
 * [TensorFlow!] (www.tensorflow.org) Google's big deal machine-learning deep-learning framework and software library.
 * [Anaconda](www.anaconda.com) Python Data-Science platform, installs many things for us including tensorflow.
@@ -20,13 +20,11 @@ References
 * [Markdown](https://help.github.com/articles/about-writing-and-formatting-on-github/) how to edit “markdown” text on github.
 
 
-Related Articles
---------
+## Related Articles
 * [INVIDIA wants to train youth in AI](https://www.technologyreview.com/the-download/609284/nvidia-is-aiming-to-train-the-next-generation-of-ai-experts/)
 
 
-Dependencies
---------
+## Dependencies
 * [TensorFlow!](www.tensorflow.org/install/install_mac) 
 * ?? [homebrew](http://brew.sh) Software package manager/updater, for mac. Is one way to get our other dependencies including numpy and scipy, but maybe Anaconda is taking care of these dependencies for us?
 * [numpy](www.numpy.org) includes (we want!) scipy.org and matplotlib.
@@ -35,43 +33,42 @@ Dependencies
 [Wikipedia re pip](https://en.wikipedia.org/wiki/Pip_(package_manager)) says most distributions of python include pip. If it is not installed...."
 
 
-Tutorials
---------
+## Tutorials
 * [Udemy online course](http://www.udemy.com/deeplearning) $10 for "Deep Learning A-Z" has pre-requisites including 
-* [numpy stack](https://www.udemy.com/deep-learning-prerequisites-the-numpy-stack-in-python/) . See [our notes](https://github.com/mroam/deepLearnAlg/blob/master/numpyStackTutorial.md) 
-* https://www.udemy.com/data-science-linear-regression-in-python/
-* Medium.com has some deeplearning tutorials, which we haven't tried yet, including [absolute beginners guide to machine learning](https://hackernoon.com/introduction-to-numpy-1-an-absolute-beginners-guide-to-machine-learning-and-data-science-5d87f13f0d51) which starts by installing numpy and teaching about numpy arrays
+  * [numpy stack](https://www.udemy.com/deep-learning-prerequisites-the-numpy-stack-in-python/) . See [our notes](https://github.com/mroam/deepLearnAlg/blob/master/numpyStackTutorial.md) 
+  * https://www.udemy.com/data-science-linear-regression-in-python/
+* Medium.com has some deep-learning tutorials, which we haven't tried yet, including 
+  * [absolute beginners guide to machine learning](https://hackernoon.com/introduction-to-numpy-1-an-absolute-beginners-guide-to-machine-learning-and-data-science-5d87f13f0d51) which starts by installing numpy and teaching about numpy arrays.
 * [Getting started with tensorflow](https://www.tensorflow.org/get_started/get_started) has link to tensorflow starter tutorial.
 
 
 
-How To Work with Python in Anaconda
---------
-AnacondaNavigator (is a mac app), has a home screen. Choose "spyder"'s "Launch" button. Suggestion: use menu "Run:ConfigurationPerFile" and set \[x]
+## How To Work with Python in Anaconda
+Anaconda-Navigator (is a mac app), and has a home screen in which we click "spyder"'s **"Launch"** button. Suggestion: use menu "Run:ConfigurationPerFile" and set \[x] (?? incomplete thought here
 
 
-To Do
+## To Do
 --------
 * Study tutorials: we're part way into [notes numpy stack tutorial](https://github.com/mroam/deepLearnAlg/blob/master/numpyStackTutorial.md) at https://www.udemy.com/deep-learning-prerequisites-the-numpy-stack-in-python/
-* Install [ipython](https://ipython.org/) and jupyter (iPython runs interactive python inside the [jupyter](https://jupyter.org/) shell and notebook system) if necessary for the numpy stack tutorial. <== wait, did Anaconda install these for us??
+* Install [ipython](https://ipython.org/) and [jupyter](https://jupyter.org/) (iPython runs interactive python inside the [jupyter](https://jupyter.org/) shell and notebook system) if necessary for the numpy stack tutorial. <== wait, did Anaconda install these for us??
 * Continue trying to install tensorflow on ppp1d, getting error about "conda: command not found" while trying to follow  https://www.tensorflow.org/install/install_mac#installing_with_anaconda. Maybe it needs reboot?
 
 
-Questions
+## Questions
 --------
 * Is it necessary to install homebrew in order to install Anaconda? I'm trying Anaconda w/o homebrew in ppp1d. An [article in stackoverflow](https://stackoverflow.com/questions/33541876/os-x-deciding-between-anaconda-and-homebrew-python-environments) says anaconda and homebrew install separate python in different places.
 * Anaconda 5.0 can install tensorflow for us, but how sketchy is the "community" support of this install vs the "official" install of tensorflow? tensorflow.org has [page about using anaconda to install tensorflow](https://www.tensorflow.org/install/install_mac#installing_with_anaconda)
-* How do we update Anaconda?
+* How do we update Anaconda? (Anaconda-Navigator self checks for updates.)
 * Does the GitHub setting about hide email really hide email address from commits done by desktop GitHub? If using command line, see [email in git](https://help.github.com/articles/setting-your-email-in-git) about adjusting GitHub to hide email in command line activity.
 
 
-Questions that we've answered
+## Questions that we've answered
 --------
 * How to install pip: Anaconda 5.0 installed python 3.6 including pip.
 * How to install numpy: Anaconda 5.0 installed numpy.
 
 
-Done (In Order!)
+## Done (In Order!)
 ----------
 * (√) Perhaps was unnecessary? Installed [homebrew](http://brew.sh) (required a sudo for installation, required that our computer account be an administrator (so much for student installs) "This script requires the user tensorflow to be an Administrator.", and says that package downloads will NOT need sudo).
 * (√) Installed Anaconda (which created ~/anaconda3 and did not need an admin password, offered to install python 3.6 and/or 2.7 (we installed 3.6)).
