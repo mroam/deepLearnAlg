@@ -77,3 +77,4 @@ adjusting the 3rd word of the following to match your account name (example acco
 
    `defaults -host` **tense** `write com.apple.finder AppleShowAllFiles -bool YES`
    
+Restart finder after doing this: can terminal `killall Finder` or forceQuit finder or option-click finder in dock and choose "Relaunch"
