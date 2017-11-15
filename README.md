@@ -73,7 +73,7 @@ Note: “whoami” displays effective user id but man file says “has been obso
 Note: We're seeing that Anaconda's install of tensorflow puts lots of invisible (dot files) stuff in "~" home folder. Would have been nice if it made a single folder for all the tensorflow stuff.
 
 * (√) Told Mac Finder to show our invisible files:
-our account is called tensorflow, so adjusting 3rd word of the following appropriately
+adjusting the 3rd word of the following to match your account name (our account is called tensorflow)
 
-   `defaults -host tensorflow write com.apple.finder AppleShowAllFiles -bool YES`
+   `defaults -host **tensorflow** write com.apple.finder AppleShowAllFiles -bool YES`
    
