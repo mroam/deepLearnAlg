@@ -1,5 +1,5 @@
 # deepLearnAlg
-Deep learning algorithms for video games
+## Deep learning algorithms for video games
 Griffin and Mike are trying to study machine learning by installing libraries, reading tutorials, running code, and revising code. Here is what we’ve found so far including links to installers, tutorials, versions, references, etc...
 
 
