@@ -49,7 +49,8 @@ Anaconda-Navigator (is a mac app), and has a home screen in which we click "spyd
 * Install [ipython](https://ipython.org/) and [jupyter](https://jupyter.org/) (iPython runs interactive python inside the [jupyter](https://jupyter.org/) shell and notebook system) if necessary for the numpy stack tutorial. <== wait, did Anaconda install these for us??
 * Continue trying to install tensorflow on ppp1d trying to follow  https://www.tensorflow.org/install/install_mac#installing_with_anaconda. Got through step 4, "conda" runs now but the first line I type into python interactive editor ( `import tensorflow as tf` ) gets nasty reply:
 > `/Users/tensorflow/anaconda3/envs/tensorflow/lib/python3.6/importlib/_bootstrap.py:219: RuntimeWarning: compiletime version 3.5 of module 'tensorflow.python.framework.fast_tensor_util' does not match runtime version 3.6`
-I see that ppp1d has python 3.6 in ~/anaconda3/usr/bin/ so where did this 3.5 module of fast_tensor_util come from??
+
+I see that ppp1d has python 3.6 in ~/anaconda3/usr/bin/ so where did this 3.5 module of fast_tensor_util come from?? Maybe I need a reboot or a re-install?
 
 
 ## Questions
