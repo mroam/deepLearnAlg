@@ -11,7 +11,7 @@ Griffin and Mike are trying to study machine learning by installing libraries, r
 
 ## References 
 * [TensorFlow!] (www.tensorflow.org) Google's big deal machine-learning deep-learning framework and software library.
-* [Anaconda](www.anaconda.com) Python Data-Science platform, installs many things for us including tensorflow.
+* [Anaconda](www.anaconda.com) Python Data-Science platform, installs many things for us including python and tensorflow.
 * [Python](https://docs.python.org/3/) Python documents including [tutorials](https://docs.python.org/3/tutorial/index.html) and [faqs](https://docs.python.org/3/faq/index.html).
 * [Python](https://docs.python.org/3/library/index.html) Python Standard Library Reference.
 * [Markdown](https://help.github.com/articles/about-writing-and-formatting-on-github/) how to edit “markdown” text on github.
@@ -22,10 +22,10 @@ Griffin and Mike are trying to study machine learning by installing libraries, r
 
 
 ## Dependencies
+* [Anaconda](www.anaconda.com) Python Data-Science platform: supposedly manages the installation of the things like tensorflow, python, numpy, scipy, and matplotlib.
 * [TensorFlow!](www.tensorflow.org/install/install_mac) 
 * ?? [homebrew](http://brew.sh) Software package manager/updater, for mac. Is one way to get our other dependencies including numpy and scipy, but maybe Anaconda is taking care of these dependencies for us?
 * [numpy](www.numpy.org) includes (we want!) scipy.org and matplotlib.
-* [Anaconda](www.anaconda.com) Python Data-Science platform: supposedly manages the installation of the things like numpy, scipy, and matplotlib.
 * pip package manager, used by Anaconda to install tensorflow. 
 [Wikipedia re pip](https://en.wikipedia.org/wiki/Pip_(package_manager)) says most distributions of python include pip. If it is not installed...."
 
