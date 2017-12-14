@@ -41,7 +41,7 @@ Griffin and Mike are trying to study machine learning by installing libraries, r
 
 
 ## How To Work with Python in Anaconda
-Anaconda-Navigator (is a mac app), and has a home screen in which we click "spyder"'s **"Launch"** button. Suggestion: use menu "Run:ConfigurationPerFile" and set \[x] (?? incomplete thought here
+Anaconda-Navigator (is a mac app), and has a home screen in which we click "spyder"'s **"Launch"** button. Suggestion: use menu "Run:ConfigurationPerFile" and set \[x]ClearAllVariablesBeforeExecution.
 
 
 ## To Do
