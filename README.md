@@ -14,6 +14,7 @@ Griffin and Mike are trying to study machine learning by installing libraries, r
 * [Anaconda](http://www.anaconda.com) Python Data-Science platform, installs many things for us including python and tensorflow.
 * [Python](https://docs.python.org/3/) Python documents including [tutorials](https://docs.python.org/3/tutorial/index.html) and [faqs](https://docs.python.org/3/faq/index.html).
 * [Python](https://docs.python.org/3/library/index.html) Python Standard Library Reference.
+* [Testing](http://docs.python-guide.org/en/latest/writing/tests/) Testing in Python!
 * [Markdown](https://help.github.com/articles/about-writing-and-formatting-on-github/) how to edit “markdown” text on github.
 
 
