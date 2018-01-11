@@ -6,12 +6,14 @@ Griffin and Mike are trying to study machine learning by installing libraries, r
 ## Potential Projects
 * Train an AI to play games.
 * Train simulated cars to deal with pedestrians and traffic. [NYTimes article](https://www.nytimes.com/2017/10/29/business/virtual-reality-driverless-cars.html)
+* Train AI to recognize twitterbots?
 
 
 
 ## References 
 * [TensorFlow!](http://www.tensorflow.org) Google's big deal machine-learning deep-learning framework and software library.
 * [Anaconda](http://www.anaconda.com) Python Data-Science platform, installs many things for us including python and tensorflow.
+* [Kaggle](https://www.kaggle.com) Lots of info about machine learning including datasets. From Google.
 * [Python](https://docs.python.org/3/) Python documents including [tutorials](https://docs.python.org/3/tutorial/index.html) and [faqs](https://docs.python.org/3/faq/index.html).
 * [Python](https://docs.python.org/3/library/index.html) Python Standard Library Reference.
 * [Testing](http://docs.python-guide.org/en/latest/writing/tests/) Testing in Python!
