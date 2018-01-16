@@ -21,6 +21,7 @@ Griffin and Mike are trying to study machine learning by installing libraries, r
 
 
 ## Related Articles
+* [AlphaZero learns chess in 4 hours, beats word's favorite chess AI](https://www.chess.com/news/view/google-s-alphazero-destroys-stockfish-in-100-game-match)
 * [INVIDIA wants to train youth in AI](https://www.technologyreview.com/the-download/609284/nvidia-is-aiming-to-train-the-next-generation-of-ai-experts/)
 
 
