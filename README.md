@@ -1,6 +1,6 @@
 # deepLearnAlg
 ## Deep learning algorithms for video games
-Griffin and Mike are trying to study machine learning by installing libraries, reading tutorials, running code, and revising code. Here is what we’ve found so far including links to installers, tutorials, versions, references, etc...
+Griffin and Mike are trying to study machine learning by installing libraries, reading tutorials, running code, and revising code. Here is what we’ve found so far including our notes (below and x and [tensorflow](tensorFlowOurNotes.md)) and links to installers, tutorials, versions, references, etc...
 
 
 ## Potential Projects
