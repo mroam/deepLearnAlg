@@ -1,4 +1,3 @@
-##
 Stray notes re TensorFlow
 -----
 
