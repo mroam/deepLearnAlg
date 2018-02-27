@@ -60,7 +60,7 @@ def plot_boundary(X, W, b, dataSet):
     print(predictions.shape)
     plt.contourf(xMesh, yMesh, predictions, cmap=plt.cm.Spectral, alpha=0.75)
     plot_data(dataSet)
-    
+    plt.show()
 
 def NN_Model(iterations, learning_rate, m):
     dataSet = set_up_data(m)
