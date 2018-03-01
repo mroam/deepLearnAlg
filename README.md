@@ -14,6 +14,7 @@ Griffin and Mike are trying to study machine learning by installing libraries, r
 * [TensorFlow!](http://www.tensorflow.org) Google's big deal machine-learning deep-learning framework and software library.
 * [Anaconda](http://www.anaconda.com) Python Data-Science platform, installs many things for us including python and tensorflow.
 * [Kaggle](https://www.kaggle.com) Lots of info about machine learning including datasets. From Google.
+* [openAI](https://www.openai.com) From Musk & Co., lots of machine learing including gym and universe. See our notes about installing them (below).
 * [Python](https://docs.python.org/3/) Python documents including [tutorials](https://docs.python.org/3/tutorial/index.html) and [faqs](https://docs.python.org/3/faq/index.html).
 * [Python](https://docs.python.org/3/library/index.html) Python Standard Library Reference.
 * [Testing](http://docs.python-guide.org/en/latest/writing/tests/) Testing in Python!
@@ -28,7 +29,7 @@ Griffin and Mike are trying to study machine learning by installing libraries, r
 ## Dependencies
 * [Anaconda](www.anaconda.com) Python Data-Science platform: supposedly manages the installation of the things like tensorflow, python, numpy, scipy, and matplotlib.
 * [TensorFlow!](www.tensorflow.org/install/install_mac) 
-* ?? [homebrew](http://brew.sh) Software package manager/updater, for mac. Is one way to get our other dependencies including numpy and scipy, but maybe Anaconda is taking care of these dependencies for us?
+* ?? [homebrew](http://brew.sh) Software package manager/updater, for mac. Is one way to get our other dependencies including numpy and scipy, but maybe Anaconda is taking care of these dependencies for us? Homebrew seems necessary for installing all of gym.openai.com onto a mac.
 * [numpy](www.numpy.org) includes (we want!) scipy.org and matplotlib.
 * pip package manager, used by Anaconda to install tensorflow. 
 [Wikipedia re pip](https://en.wikipedia.org/wiki/Pip_(package_manager)) says most distributions of python include pip. If it is not installed...."
@@ -70,12 +71,17 @@ I see that ppp1d has python 3.6 in ~/anaconda3/usr/bin/ so where did this 3.5 mo
 
 
 ## Done (In Order!)
+* (√ Mar2018) Using [homebrew](http://brew.sh) to start [installing gym.openai.com](github.com/openai/gym#basics) (began with `brew update` and then `brew install`
 * (√ Oct2017) Perhaps was unnecessary? Installed [homebrew](http://brew.sh) (required a sudo for installation, required that our computer account be an administrator (so much for student installs) "This script requires the user tensorflow to be an Administrator.", and says that package downloads will NOT need sudo).
 * (√ Oct2017) Installed Anaconda (which created ~/anaconda3 and did not need an admin password, offered to install python 3.6 and/or 2.7 (we installed 3.6)).
-* (√ Oct2017) Used Anaconda to install tensorFlow (after reviewing ownership of "/usr/local/Cellar"  -- suggestion was 
-
+* (√ Oct2017) Used Anaconda to install tensorFlow (after reviewing ownership of "/usr/local/Cellar"  using
+   `su adminAcct`
+   `sudo chown -R tensorflow /usr/local/Cellar`
+   `sudo chown -R tensorflow /usr/local/var/homebrew`
+   `sudo chown -R tensorflow /usr/local/Homebrew`
+ 
+ -- note: homebrew's suggestion was 
    `sudo chown -R $(whoami) /usr/local/Cellar`
-   
 Note: “whoami” displays effective user id but man file says “has been obsoleted by the ‘id’ utility and is equivalent to ‘id -un’ though ‘id -p’ is suggested for normal interactive use.”
 Note: We're seeing that Anaconda's install of tensorflow puts lots of invisible (dot files) stuff in "~" home folder. Would have been nice if it made a single folder for all the tensorflow stuff.
 
