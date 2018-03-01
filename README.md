@@ -21,7 +21,7 @@ Griffin and Mike are trying to study machine learning by installing libraries, r
 
 
 ## Related Articles
-* [AlphaZero learns chess in 4 hours, beats word's favorite chess AI](https://www.chess.com/news/view/google-s-alphazero-destroys-stockfish-in-100-game-match)
+* [AlphaZero learns chess in 4 hours, beats world's favorite chess AI](https://www.chess.com/news/view/google-s-alphazero-destroys-stockfish-in-100-game-match)
 * [INVIDIA wants to train youth in AI](https://www.technologyreview.com/the-download/609284/nvidia-is-aiming-to-train-the-next-generation-of-ai-experts/)
 
 
@@ -70,16 +70,16 @@ I see that ppp1d has python 3.6 in ~/anaconda3/usr/bin/ so where did this 3.5 mo
 
 
 ## Done (In Order!)
-* (√) Perhaps was unnecessary? Installed [homebrew](http://brew.sh) (required a sudo for installation, required that our computer account be an administrator (so much for student installs) "This script requires the user tensorflow to be an Administrator.", and says that package downloads will NOT need sudo).
-* (√) Installed Anaconda (which created ~/anaconda3 and did not need an admin password, offered to install python 3.6 and/or 2.7 (we installed 3.6)).
-* (√) Used Anaconda to install tensorFlow (after reviewing ownership of "/usr/local/Cellar"  -- suggestion was 
+* (√ Oct2017) Perhaps was unnecessary? Installed [homebrew](http://brew.sh) (required a sudo for installation, required that our computer account be an administrator (so much for student installs) "This script requires the user tensorflow to be an Administrator.", and says that package downloads will NOT need sudo).
+* (√ Oct2017) Installed Anaconda (which created ~/anaconda3 and did not need an admin password, offered to install python 3.6 and/or 2.7 (we installed 3.6)).
+* (√ Oct2017) Used Anaconda to install tensorFlow (after reviewing ownership of "/usr/local/Cellar"  -- suggestion was 
 
    `sudo chown -R $(whoami) /usr/local/Cellar`
    
 Note: “whoami” displays effective user id but man file says “has been obsoleted by the ‘id’ utility and is equivalent to ‘id -un’ though ‘id -p’ is suggested for normal interactive use.”
 Note: We're seeing that Anaconda's install of tensorflow puts lots of invisible (dot files) stuff in "~" home folder. Would have been nice if it made a single folder for all the tensorflow stuff.
 
-* (√) Told Mac Finder to show our invisible files:
+* (√ Oct2017) Told Mac Finder to show our invisible files:
 adjusting the 3rd word of the following to match your account name (example account is called 'tense')
 
    `defaults -host` **tense** `write com.apple.finder AppleShowAllFiles -bool YES`
