@@ -25,11 +25,11 @@ def relu(x):
 
 def set_up_data(m):
     dataSet = sklearn.datasets.make_moons(n_samples=m, noise=0.1)
-    #dataSet = sklearn.datasets.make_circles(n_samples=m, noise=0.2, factor = 0.02)
-    #dataSet = sklearn.datasets.make_blobs(n_samples=m, centers=10)
-    #tempX = dataSet[0]
-    #tempY = dataSet[1] % 2
-    #dataSet = (tempX, tempY)
+    dataSet = sklearn.datasets.make_circles(n_samples=m, noise=0.2, factor = 0.02)
+    dataSet = sklearn.datasets.make_blobs(n_samples=m, centers=10)
+    tempX = dataSet[0]
+    tempY = dataSet[1] % 2
+    dataSet = (tempX, tempY)
     return dataSet
 
 

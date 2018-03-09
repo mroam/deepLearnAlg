@@ -19,6 +19,7 @@ def set_up_data(m):
 
 def plot_data(dataSet):
     plt.scatter(dataSet[0][:, 0], dataSet[0][:, 1], c=dataSet[1], cmap=plt.cm.Spectral)
+    plt.show()
     
 def init_params(X):
     W = np.random.randn(1, np.size(X, axis = 0))
@@ -58,7 +59,11 @@ def plot_boundary(X, W, b, dataSet):
     predictions = predict(np.c_[xMesh.ravel(), yMesh.ravel()].T, W, b)
     predictions = predictions.reshape(xMesh.shape)
     print(predictions.shape)
+    plt.figure(1)
     plt.contourf(xMesh, yMesh, predictions, cmap=plt.cm.Spectral, alpha=0.75)
+    plot_data(dataSet)
+    plt.show()
+    plt.figure(2)
     plot_data(dataSet)
     plt.show()
 
