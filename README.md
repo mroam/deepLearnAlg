@@ -58,7 +58,8 @@ Anaconda-Navigator (is a mac app), and has a home screen in which we click "spyd
 
 
 ## To Do
-* Finish [installing gym.openai.com](github.com/openai/gym#basics) (began with `brew update` and then `brew install` but then we're finding that they want /usr/local/bin to be writable!!?? Why aren't they using ~/usr/local/bin for Pete's sake--see [brew docs](https://docs.brew.sh/FAQ)
+* Finish [installing gym.openai.com](github.com/openai/gym#basics) (began with `brew update` and then `brew install` but then we're finding that they want /usr/local/bin to be writable!!?? Why aren't they using ~/usr/local/bin for Pete's sake--see [brew docs](https://docs.brew.sh/FAQ) We've tried loosening /usr/local by using `sudo chmod -R +a "user:tensorflow allow list,add_file,search,delete,add_subdirectory,delete_child,readattr,writeattr,readextattr,writeextattr,readsecurity,writesecurity,chown,file_inherit,directory_inherit"  /usr/local/` ?? Was this a tremendous mistake?
+
 * Study tutorials: we're part way into [notes numpy stack tutorial](https://github.com/mroam/deepLearnAlg/blob/master/numpyStackTutorial.md) at https://www.udemy.com/deep-learning-prerequisites-the-numpy-stack-in-python/
 * Install [ipython](https://ipython.org/) and [jupyter](https://jupyter.org/) (iPython runs interactive python inside the [jupyter](https://jupyter.org/) shell and notebook system) if necessary for the numpy stack tutorial. <== wait, did Anaconda install these for us??
 * Continue trying to install tensorflow on ppp1d trying to follow  https://www.tensorflow.org/install/install_mac#installing_with_anaconda. Got through step 4, "conda" runs now but the first line I type into python interactive editor ( `import tensorflow as tf` ) gets nasty reply:
