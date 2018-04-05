@@ -4,7 +4,7 @@ Griffin and Mike are trying to study machine learning by installing libraries, r
 
 
 ## Potential Projects
-* Train an AI to play games.
+* Train an AI to play games. (Perhaps it could interface with the [Java Backgammon](https://github.com/mroam/backgammon) project from previous independent student work!)
 * Train simulated cars to deal with pedestrians and traffic. [NYTimes article](https://www.nytimes.com/2017/10/29/business/virtual-reality-driverless-cars.html)
 * Train AI to recognize twitterbots?
 
