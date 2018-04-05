@@ -58,7 +58,8 @@ Anaconda-Navigator (is a mac app), and has a home screen in which we click "spyd
 
 
 ## To Do
-* Finish [installing gym.openai.com](github.com/openai/gym#basics) (began with `brew update` and then `brew install` but then we're finding that they want /usr/local/bin to be writable!!?? Why aren't they using ~/usr/local/bin for Pete's sake--see [brew docs](https://docs.brew.sh/FAQ) We've tried loosening /usr/local by using `sudo chmod -R +a "user:tensorflow allow list,add_file,search,delete,add_subdirectory,delete_child,readattr,writeattr,readextattr,writeextattr,readsecurity,writesecurity,chown,file_inherit,directory_inherit"  /usr/local/` ?? Was this a tremendous mistake?
+* (For [mujoco-py](github.com/openai/mujoco-py) which provides 3D animation, need 30 day trial or student license....)
+
 
 * Study tutorials: we're part way into [notes numpy stack tutorial](https://github.com/mroam/deepLearnAlg/blob/master/numpyStackTutorial.md) at https://www.udemy.com/deep-learning-prerequisites-the-numpy-stack-in-python/
 * Install [ipython](https://ipython.org/) and [jupyter](https://jupyter.org/) (iPython runs interactive python inside the [jupyter](https://jupyter.org/) shell and notebook system) if necessary for the numpy stack tutorial. <== wait, did Anaconda install these for us??
@@ -80,7 +81,8 @@ I see that ppp1d has python 3.6 in ~/anaconda3/usr/bin/ so where did this 3.5 mo
 * How to install numpy: Anaconda 5.0 installed numpy.
 
 
-## Done (In Order!)
+## Done (Most Recent at top)
+* (√ Apr2018) Finish [installing gym.openai.com](https://gym.openai.com/docs/#installation) (began with `brew update` and then `brew install` and `brew install cmake boost boost-python sdl2 swig wget` but then we're finding that they want /usr/local/bin to be writable!!?? (Why aren't they using ~/usr/local/bin for Pete's sake--see [brew docs](https://docs.brew.sh/FAQ) We've tried loosening /usr/local by using `sudo chmod -R +a "user:tensorflow allow list,add_file,search,delete,add_subdirectory,delete_child,readattr,writeattr,readextattr,writeextattr,readsecurity,writesecurity,chown,file_inherit,directory_inherit"  /usr/local/` ?? Was this a tremendous mistake? But then we were allowed to continue with `pip install gym` and then `pip install 'gym[all]'` and Griffin's 2D animation was working. 
 * (√ Mar2018) Using [homebrew](http://brew.sh) to start [installing gym.openai.com](github.com/openai/gym#basics) (began with `brew update` and then `brew install`
 * (√ Oct2017) Perhaps was unnecessary? Installed [homebrew](http://brew.sh) (required a sudo for installation, required that our computer account be an administrator (so much for student installs) "This script requires the user tensorflow to be an Administrator.", and says that package downloads will NOT need sudo).
 * (√ Oct2017) Installed Anaconda (which created ~/anaconda3 and did not need an admin password, offered to install python 3.6 and/or 2.7 (we installed 3.6)).
