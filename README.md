@@ -18,7 +18,7 @@ Griffin and Mike are trying to study machine learning by installing libraries, r
 * [Python](https://docs.python.org/3/) Python documents including [tutorials](https://docs.python.org/3/tutorial/index.html) and [faqs](https://docs.python.org/3/faq/index.html).
 * [Python](https://docs.python.org/3/library/index.html) Python Standard Library Reference.
 * [Testing](http://docs.python-guide.org/en/latest/writing/tests/) Testing in Python!
-* [Markdown](https://daringfireball.net/projects/markdown/) how to edit “markdown” text on github. Also see [Editing in Github in general](https://help.github.com/articles/about-writing-and-formatting-on-github/).
+* [Markdown](https://daringfireball.net/projects/markdown/) how to edit “markdown” text on github. Also see [Editing in Github in general](https://help.github.com/articles/about-writing-and-formatting-on-github/), and [how to create/highlight code blocks](https://help.github.com/articles/creating-and-highlighting-code-blocks/).
 
 
 ## Related Articles
@@ -86,12 +86,14 @@ I see that ppp1d has python 3.6 in ~/anaconda3/usr/bin/ so where did this 3.5 mo
 * (√ Oct2017) Perhaps was unnecessary? Installed [homebrew](http://brew.sh) (required a sudo for installation, required that our computer account be an administrator (so much for student installs) "This script requires the user tensorflow to be an Administrator.", and says that package downloads will NOT need sudo).
 * (√ Oct2017) Installed Anaconda (which created ~/anaconda3 and did not need an admin password, offered to install python 3.6 and/or 2.7 (we installed 3.6)).
 * (√ Oct2017) Used Anaconda to install tensorFlow (after reviewing ownership of "/usr/local/Cellar"  using
+
+```
     su adminAcct
     sudo chown -R tensorflow /usr/local/Cellar
     sudo chown -R tensorflow /usr/local/var/homebrew
     sudo chown -R tensorflow /usr/local/Homebrew
     sudo chown -R tensorflow /usr/local/opt
-   
+```   
 
 ?? Why  `/usr/local/bin` privileges issue with gym install??
  
