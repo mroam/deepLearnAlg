@@ -87,13 +87,15 @@ I see that ppp1d has python 3.6 in ~/anaconda3/usr/bin/ so where did this 3.5 mo
 * (√ Oct2017) Installed Anaconda (which created ~/anaconda3 and did not need an admin password, offered to install python 3.6 and/or 2.7 (we installed 3.6)).
 * (√ Oct2017) Used Anaconda to install tensorFlow (after reviewing ownership of "/usr/local/Cellar"  using
 
+
     su adminAcct
     sudo chown -R tensorflow /usr/local/Cellar
     sudo chown -R tensorflow /usr/local/var/homebrew
     sudo chown -R tensorflow /usr/local/Homebrew
     sudo chown -R tensorflow /usr/local/opt
    
-   ?? Why  `/usr/local/bin` privileges issue with gym install??
+
+?? Why  `/usr/local/bin` privileges issue with gym install??
  
  -- note: homebrew's suggestion was 
  
