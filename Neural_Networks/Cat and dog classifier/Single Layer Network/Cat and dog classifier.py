@@ -8,6 +8,7 @@ Created on Wed Jan 10 23:25:05 2018
 import numpy as np
 import matplotlib.pyplot as plt
 from PIL import Image
+import os
 
 #imgMat = []
 #yVect = []
@@ -26,11 +27,13 @@ def loadTrainData(m):
         else:
             toChoose = "dog"
             yVect.append(0)
-        img = Image.open("train/{0}.{1}.jpg".format(toChoose, i))
-        img = img.resize((256, 256))
+        dir_path = os.path.dirname(os.path.realpath(__file__))
+        print(dir_path)
+        #img = Image.open("train/{0}.{1}.jpg".format(toChoose, i))
+        img = img.resize((32, 32))
         imgVector = img.getdata()
         imgVector = np.array(imgVector)
-        imgVector = imgVector.reshape((65536*3, 1))
+        imgVector = imgVector.reshape((32*32*3, 1))
         imgMat.append(imgVector[:, 0])
 
 def loadTestData(mt):
