@@ -7,7 +7,7 @@ Griffin and Mike are trying to study machine learning by installing libraries, r
 * Train an AI to play games. (Perhaps it could interface with prior student [Java Backgammon](https://github.com/mroam/backgammon) project!)
 * Train simulated cars to deal with [pedestrians and traffic. see NYTimes article](https://www.nytimes.com/2017/10/29/business/virtual-reality-driverless-cars.html).
 * Train AI to recognize twitterbots? 
-(See online service [Botometer](https://botometer.iuni.iu.edu/), 
+(See online service [Botometer](https://botometer.iuni.iu.edu/) ... BEWARE, "botornot" ".co" is an imposter site, 
 [MIT Tech Review article "How to Spot a Social Bot on Twitter](https://www.technologyreview.com/s/529461/how-to-spot-a-social-bot-on-twitter/),
 and [the 'reffy' botnet](https://www.unhackthevote.com/our-research/the-reffy-botnet/) which is not just one bot but a whole network of mutually assisting bots.
 
@@ -61,6 +61,7 @@ Anaconda-Navigator (is a mac app), and has a home screen in which we click "spyd
 
 
 ## To Do
+* Detect some keystroke that would let us bail out of training before it is done.
 * (For [mujoco-py](github.com/openai/mujoco-py) which provides 3D animation, need 30 day trial or student license....)
 * Study tutorials: we're part way into [notes numpy stack tutorial](https://github.com/mroam/deepLearnAlg/blob/master/numpyStackTutorial.md) at https://www.udemy.com/deep-learning-prerequisites-the-numpy-stack-in-python/
 * Install [ipython](https://ipython.org/) and [jupyter](https://jupyter.org/) (iPython runs interactive python inside the [jupyter](https://jupyter.org/) shell and notebook system) if necessary for the numpy stack tutorial. <== wait, did Anaconda install these for us??
@@ -84,6 +85,7 @@ I see that ppp1d has python 3.6 in ~/anaconda3/usr/bin/ so where did this 3.5 mo
 
 
 ## Done (Most Recent at top)
+* (√ Apr 2018) Lots of comments, and now the code runs a stopwatch timer on itself.
 * (√ Apr2018) Finish [installing gym.openai.com](https://gym.openai.com/docs/#installation) (began with `brew update` and then `brew install` and `brew install cmake boost boost-python sdl2 swig wget` but then we're finding that they want /usr/local/bin to be writable!!?? (Why aren't they using ~/usr/local/bin for Pete's sake--see [brew docs](https://docs.brew.sh/FAQ) We've tried loosening /usr/local by using `sudo chmod -R +a "user:tensorflow allow list,add_file,search,delete,add_subdirectory,delete_child,readattr,writeattr,readextattr,writeextattr,readsecurity,writesecurity,chown,file_inherit,directory_inherit"  /usr/local/` ?? Was this a tremendous mistake? But then we were allowed to continue with `pip install gym` and then `pip install 'gym[all]'` and Griffin's 2D animation was working. 
 * (√ Mar2018) Using [homebrew](http://brew.sh) to start [installing gym.openai.com](github.com/openai/gym#basics) (began with `brew update` and then `brew install`
 * (√ Oct2017) Perhaps was unnecessary? Installed [homebrew](http://brew.sh) (required a sudo for installation, required that our computer account be an administrator (so much for student installs) "This script requires the user tensorflow to be an Administrator.", and says that package downloads will NOT need sudo).
