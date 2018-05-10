@@ -109,7 +109,19 @@ def test_accuracy(weights, X, Y):
     accuracy = np.sum(np.sum(accuracy, axis = 0)) / np.size(X, axis = 1)
     return accuracy
 
+def save_weights(weights):
+    for key in weights:
+        dir_path = os.path.dirname(os.path.realpath(__file__))
+        fileName = dir_path + "/" + key
+        np.save(fileName, weights[key])
 
+def load_saved_weights():
+    weights = {}
+    dir_path = os.path.dirname(os.path.realpath(__file__)) + "/weights"
+    for file in os.listdir(dir_path):
+        fileName = file[:-4]
+        weights[fileName] = np.load(dir_path + "/" + file)
+    return weights
 
 #Main model function
 #Yet to make this NN_Model multi-hidden layer TODO
@@ -155,5 +167,23 @@ def NN_Model(iterations, learning_rate, n, batch_size):
     Ytest = np.array(dataSet.test.labels).T
     testAccuracy = test_accuracy(weights, Xtest, Ytest)
     print("Test set accuracy: ", testAccuracy * 100, "%")
+    save_weights(weights)
+
+def Run_Saved_Model():
+    dataSet = set_up_data()
+    X = np.array(dataSet.train.images).T
+    m = np.size(X, axis=1)
+    print("X shape: ", X.shape)
+    Y = np.array(dataSet.train.labels).T
+    print("Y shape: ", Y.shape)
+    weights = load_saved_weights()
+    trainAccuracy = test_accuracy(weights, X, Y)
+    print("Training set accuracy: ", trainAccuracy * 100, "%")
+    Xtest = np.array(dataSet.test.images).T
+    Ytest = np.array(dataSet.test.labels).T
+    testAccuracy = test_accuracy(weights, Xtest, Ytest)
+    print("Test set accuracy: ", testAccuracy * 100, "%")
+
 #NN_Model(iterations, learning_rate, number of hidden units in hidden layer, batch_size)
-NN_Model(1000, 0.05, [10, 10], 1000)
+#NN_Model(1000, 0.05, [10, 10], 1000)
+Run_Saved_Model()
