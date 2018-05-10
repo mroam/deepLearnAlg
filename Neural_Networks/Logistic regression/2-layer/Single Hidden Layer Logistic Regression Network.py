@@ -25,11 +25,11 @@ def relu(x):
 
 def set_up_data(m):
     dataSet = sklearn.datasets.make_moons(n_samples=m, noise=0.1)
-    dataSet = sklearn.datasets.make_circles(n_samples=m, noise=0.2, factor = 0.02)
-    dataSet = sklearn.datasets.make_blobs(n_samples=m, centers=10)
-    tempX = dataSet[0]
-    tempY = dataSet[1] % 2
-    dataSet = (tempX, tempY)
+    #dataSet = sklearn.datasets.make_circles(n_samples=m, noise=0.2, factor = 0.02)
+    #dataSet = sklearn.datasets.make_blobs(n_samples=m, centers=10)
+    #tempX = dataSet[0]
+    #tempY = dataSet[1] % 2
+    #dataSet = (tempX, tempY)
     return dataSet
 
 
@@ -53,17 +53,16 @@ def cost(A2, Y, m):
 #X is the dataset, W is weight, b is bias
 def forward_prop(X, W1, b1, W2, b2):
     Z1 = W1.dot(X) + b1
-    A1 = tanh(Z1)
+    A1 = relu(Z1)
     Z2 = W2.dot(A1) + b2
     A2 = sigmoid(Z2)
     return A1, Z1, A2, Z2
-
 
 def back_prop(A1, A2, Z1, X, W2, Y, m):
     dZ2 = A2 - Y
     dW2 = (1/m)*dZ2.dot(A1.T)
     db2 = (1/m)*np.sum(dZ2, axis = 1, keepdims = True)
-    dZ1 = W2.T.dot(dZ2)*(1-np.square(A1))
+    dZ1 = np.multiply(W2.T.dot(dZ2), np.int64(A1 > 0))
     dW1 = (1/m)*dZ1.dot(X.T)
     db1 = (1/m)*np.sum(dZ1, axis=1, keepdims = True)
     return dW1, db1, dW2, db2
@@ -126,5 +125,5 @@ def NN_Model(iterations, learning_rate, n_h, m):
     print("Accuracy: " + str(accuracy) + "%")
     
 #NN_Model(iterations, learning_rate, number of hidden layers, number of items in dataset)    
-NN_Model(10000, 1, 5, 100)
+NN_Model(10000, 0.1, 500, 100)
 
