@@ -167,10 +167,11 @@ def NN_Model(iterations, learning_rate, n, batch_size):
     Ytest = np.array(dataSet.test.labels).T
     testAccuracy = test_accuracy(weights, Xtest, Ytest)
     print("Test set accuracy: ", testAccuracy * 100, "%")
-    save_weights(weights)
+    #save_weights(weights)
 
 def Run_Saved_Model():
     dataSet = set_up_data()
+    print(dataSet.test.images)
     X = np.array(dataSet.train.images).T
     m = np.size(X, axis=1)
     print("X shape: ", X.shape)
@@ -185,5 +186,5 @@ def Run_Saved_Model():
     print("Test set accuracy: ", testAccuracy * 100, "%")
 
 #NN_Model(iterations, learning_rate, number of hidden units in hidden layer, batch_size)
-#NN_Model(1000, 0.05, [10, 10], 1000)
-Run_Saved_Model()
+NN_Model(1000, 0.05, [10, 10], 1000)
+#Run_Saved_Model()
