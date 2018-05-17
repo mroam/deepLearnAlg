@@ -1,8 +1,8 @@
 # deepLearnAlg
 ## Deep learning algorithms for video games
-Griffin is studying machine learning by working along with courses 1, 2, and 3 by Stanford Professor [Andrew Ng](www.coursera.org/specializations/deep-learning), installing libraries, reading tutorials, running code, and revising code. Here is what I’ve found so far including notes (below and [numpyStackTutorial](numpyStackTutorial.md) and [tensorflow](tensorFlowOurNotes.md)) and links to installers, tutorials, versions, references, etc...
+Griffin is studying machine learning by working along with [courses 1, 2, and 3 by Stanford Professor Andrew Ng](http://www.coursera.org/specializations/deep-learning), installing libraries, reading tutorials, running code, and revising code. Here is what I’ve found so far including notes (below and [numpyStackTutorial](numpyStackTutorial.md) and [tensorflow](tensorFlowOurNotes.md)) and links to installers, tutorials, versions, references, etc...
 
-Current working environment is visual studio code and [pytorch](pytorch.org), which has installers for mac/linux/windows, with choice of package manager (I'm using conda), python (using 3.6), and CUDA (none, might not be supported on mac). Previous working environments in 2017-8 were openai gym (notes below) and tensorflow. [Pytorch](http://www.pytorch.org) has the ADAM optimizer which adjusts the learning rate as training is happening. This turned out to be faster than my hand-written code.
+Current working environment is visual studio code and [pytorch](http://www.pytorch.org), which has installers for mac/linux/windows, with choice of package manager (I'm using conda), python (using 3.6), and CUDA (none, might not be supported on mac). Previous working environments in 2017-8 were openai gym (notes below) and tensorflow. [Pytorch](http://www.pytorch.org) has the ADAM optimizer which adjusts the learning rate as training is happening. This turned out to be faster than my hand-written code.
 
 
 ## Potential Projects
@@ -17,10 +17,10 @@ and [the 'reffy' botnet](https://www.unhackthevote.com/our-research/the-reffy-bo
 
 
 ## References 
-* [Pytorch!](http://www.pytorch.org) Framework for forward propogation, is very helpful because it automatically calculates derivatives for back propogation. Most of my work uses raw python with [numpy](www.numpy.org/) math library. [MNIST](yann.lecun.com/exdb/mnist/) data set provided one of the training and test sets.
+* [Pytorch!](http://www.pytorch.org) Framework for forward propogation, is very helpful because it automatically calculates derivatives for back propogation. Most of my work uses raw python with [numpy](www.numpy.org/) math library. [MNIST](http://yann.lecun.com/exdb/mnist/) data set provided one of the training and test sets.
 * [TensorFlow](http://www.tensorflow.org) Google's big deal machine-learning deep-learning framework and software library.
 * [Anaconda](http://www.anaconda.com) Python Data-Science platform, installs many things for us including python and tensorflow.
-* [Kaggle](https://www.kaggle.com) Lots of info about machine learning including datasets. From Google.
+* [Kaggle](https://www.kaggle.com) Lots of info about machine learning including datasets. From Google. Provided cat and dog pictures organized into learning/testing sets.
 * [openAI](https://www.openai.com) From Musk & Co., lots of machine learing including [gym](https://gym.openai.com) and [universe](https://github.com/openai/universe). See our notes about installing them (below).
 * [Python](https://docs.python.org/3/) Python documents including [tutorials](https://docs.python.org/3/tutorial/index.html) and [faqs](https://docs.python.org/3/faq/index.html).
 * [Python](https://docs.python.org/3/library/index.html) Python Standard Library Reference.
@@ -77,6 +77,11 @@ Anaconda-Navigator (is a mac app), and has a home screen in which we click "spyd
 
 I see that ppp1d has python 3.6 in ~/anaconda3/usr/bin/ so where did this 3.5 module of fast_tensor_util come from?? Maybe I need a reboot or a re-install?
 
+
+## Conclusions
+* My handwritten number recognizer (aka MNIST digits classifier) has 97% accuracy but is no good for cats & dogs: think it has to do with high variability in the cat & dog data set--so much more to take into account including blurriness, varied resolution, framing, cat type, dog type, people in some pictures, background objects, etc. Further courses will explore convolutional neural networks that will help with these complications.
+* Supervised Machine learning is like a function-- it receives data sets + networks of randomly initialized neurons + a series of (relatively simple) non-linear transformations--and produces a function (neural network) that can distinguish things (visual recognition) or can model complex behavior (e.g. race cars in closed course, stock market trends, user behavior, 
+ps: the series of transformaions, when combined, are able to model complex behavior.
 
 ## Questions
 * Is it necessary to install homebrew in order to install Anaconda? I'm trying Anaconda w/o homebrew in ppp1d. An [article in stackoverflow](https://stackoverflow.com/questions/33541876/os-x-deciding-between-anaconda-and-homebrew-python-environments) says anaconda and homebrew install separate python in different places.
