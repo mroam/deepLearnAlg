@@ -1,6 +1,8 @@
 # deepLearnAlg
 ## Deep learning algorithms for video games
-Griffin and Mike are trying to study machine learning by installing libraries, reading tutorials, running code, and revising code. Here is what we’ve found so far including our notes (below and [numpyStackTutorial](numpyStackTutorial.md) and [tensorflow](tensorFlowOurNotes.md)) and links to installers, tutorials, versions, references, etc...
+Griffin is studying machine learning by working along with courses 1, 2, and 3 by Stanford Professor [Andrew Ng](www.coursera.org/specializations/deep-learning), installing libraries, reading tutorials, running code, and revising code. Here is what I’ve found so far including notes (below and [numpyStackTutorial](numpyStackTutorial.md) and [tensorflow](tensorFlowOurNotes.md)) and links to installers, tutorials, versions, references, etc...
+
+Current working environment is visual studio code and [pytorch](pytorch.org), which has installers for mac/linux/windows, with choice of package manager (I'm using conda), python (using 3.6), and CUDA (none, might not be supported on mac). Previous working environments in 2017-8 were openai gym (notes below) and tensorflow. [Pytorch](http://www.pytorch.org) has the ADAM optimizer which adjusts the learning rate as training is happening. This turned out to be faster than my hand-written code.
 
 
 ## Potential Projects
@@ -15,7 +17,8 @@ and [the 'reffy' botnet](https://www.unhackthevote.com/our-research/the-reffy-bo
 
 
 ## References 
-* [TensorFlow!](http://www.tensorflow.org) Google's big deal machine-learning deep-learning framework and software library.
+* [Pytorch!](http://www.pytorch.org) Framework for forward propogation, is very helpful because it automatically calculates derivatives for back propogation. Most of my work uses raw python with [numpy](www.numpy.org/) math library. [MNIST](yann.lecun.com/exdb/mnist/) data set provided one of the training and test sets.
+* [TensorFlow](http://www.tensorflow.org) Google's big deal machine-learning deep-learning framework and software library.
 * [Anaconda](http://www.anaconda.com) Python Data-Science platform, installs many things for us including python and tensorflow.
 * [Kaggle](https://www.kaggle.com) Lots of info about machine learning including datasets. From Google.
 * [openAI](https://www.openai.com) From Musk & Co., lots of machine learing including [gym](https://gym.openai.com) and [universe](https://github.com/openai/universe). See our notes about installing them (below).
@@ -39,15 +42,16 @@ and [the 'reffy' botnet](https://www.unhackthevote.com/our-research/the-reffy-bo
 
 
 ## Dependencies
-* [Anaconda](www.anaconda.com) Python Data-Science platform: supposedly manages the installation of the things like tensorflow, python, numpy, scipy, and matplotlib.
+* [numpy](www.numpy.org) includes (we want!) scipy.org and matplotlib.
+* [Anaconda](www.anaconda.com) Python Data-Science platform and package manager: supposedly manages the installation of the things like tensorflow, python, numpy, scipy, and matplotlib.
 * [TensorFlow!](www.tensorflow.org/install/install_mac) 
 * ?? [homebrew](http://brew.sh) Software package manager/updater, for mac. Is one way to get our other dependencies including numpy and scipy, but maybe Anaconda is taking care of these dependencies for us? Homebrew seems necessary for installing all of gym.openai.com onto a mac.
-* [numpy](www.numpy.org) includes (we want!) scipy.org and matplotlib.
 * pip package manager, used by Anaconda to install tensorflow. 
 [Wikipedia re pip](https://en.wikipedia.org/wiki/Pip_(package_manager)) says most distributions of python include pip. If it is not installed...."
 
 
 ## Tutorials
+* Courses 1, 2, and 3 by Stanford Professor [Andrew Ng](www.coursera.org/specializations/deep-learning)
 * [Udemy online course](http://www.udemy.com/deeplearning) $10 for "Deep Learning A-Z" has pre-requisites including 
    * [numpy stack](https://www.udemy.com/deep-learning-prerequisites-the-numpy-stack-in-python/) . See [our notes](https://github.com/mroam/deepLearnAlg/blob/master/numpyStackTutorial.md) 
    * https://www.udemy.com/data-science-linear-regression-in-python/
@@ -62,6 +66,8 @@ Anaconda-Navigator (is a mac app), and has a home screen in which we click "spyd
 
 
 ## To Do
+* Finish studying Ng's courses.
+* Summary paper about 2017-8 work.
 * Detect some keystroke that would let us bail out of training before it is done.
 * (For [mujoco-py](github.com/openai/mujoco-py) which provides 3D animation, need 30 day trial or student license....)
 * Study tutorials: we're part way into [notes numpy stack tutorial](https://github.com/mroam/deepLearnAlg/blob/master/numpyStackTutorial.md) at https://www.udemy.com/deep-learning-prerequisites-the-numpy-stack-in-python/
@@ -86,6 +92,7 @@ I see that ppp1d has python 3.6 in ~/anaconda3/usr/bin/ so where did this 3.5 mo
 
 
 ## Done (Most Recent at top)
+* (√ May 2018) Wrote abstract, presented at independent science.
 * (√ Apr 2018) Lots of comments, and now the code runs a stopwatch timer on itself.
 * (√ Apr2018) Finish [installing gym.openai.com](https://gym.openai.com/docs/#installation) (began with `brew update` and then `brew install` and `brew install cmake boost boost-python sdl2 swig wget` but then we're finding that they want /usr/local/bin to be writable!!?? (Why aren't they using ~/usr/local/bin for Pete's sake--see [brew docs](https://docs.brew.sh/FAQ) We've tried loosening /usr/local by using `sudo chmod -R +a "user:tensorflow allow list,add_file,search,delete,add_subdirectory,delete_child,readattr,writeattr,readextattr,writeextattr,readsecurity,writesecurity,chown,file_inherit,directory_inherit"  /usr/local/` ?? Was this a tremendous mistake? But then we were allowed to continue with `pip install gym` and then `pip install 'gym[all]'` and Griffin's 2D animation was working. 
 * (√ Mar2018) Using [homebrew](http://brew.sh) to start [installing gym.openai.com](github.com/openai/gym#basics) (began with `brew update` and then `brew install`
