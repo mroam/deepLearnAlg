@@ -32,7 +32,7 @@ and [the 'reffy' botnet](https://www.unhackthevote.com/our-research/the-reffy-bo
 * [AlphaZero learns chess in 4 hours, beats world's favorite chess AI](https://www.chess.com/news/view/google-s-alphazero-destroys-stockfish-in-100-game-match)
 * [INVIDIA wants to train youth in AI](https://www.technologyreview.com/the-download/609284/nvidia-is-aiming-to-train-the-next-generation-of-ai-experts/)
 * [Different stick figures learn to walk](http://www.goatstream.com/research/papers/SA2013/)
-* [Neural Network recognizes sketchy drawings in seconds](https://quickdraw.withgoogle.com)
+* [Neural Network recognizes sketchy drawings in seconds](https://quickdraw.withgoogle.com)⬅︎Interactive, try it! This is one of several interesting interactive apps at http://experiments.withgoogle.com/collection/ai, including a program that tries to finish your partial sketch of a specicified object, and a program that copies your style to improvise piano duet.
 
 
 ## Related Videos
