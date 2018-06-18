@@ -151,7 +151,7 @@ def main():
     env = load_environment()
     #currLeader = train(env, 1, 1600, 1000, [4, 5, 4])
     currLeader = train(env, 5, 1600, 1000, [2, 5, 3]) #works well for MountainCar-v0
-    #currLeader = train(env, 1, 1600, 1000, [2, 4, 2]) #works well for CartPole-v1
+    #currLeader = train(env, 1, 1600, 1, [2, 4, 2]) #works well for CartPole-v1
     finalScore = test_network(env, currLeader)
     print("Final network score: ", finalScore)
 

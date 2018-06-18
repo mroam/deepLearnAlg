@@ -11,13 +11,23 @@ class NN_Model(nn.Module):
 
     def __init__(self, Xsize, numOfClasses):
         super(NN_Model, self).__init__()
-        self.linearForward1 = nn.Linear(Xsize, 100)
-        self.linearForward2 = nn.Linear(100, 50)
-        self.linearForward3 = nn.Linear(50, 10)
+        self.conv1 = nn.Conv2d(1, 32, 5, stride=1, padding=2)
+        self.conv2 = nn.Conv2d(32, 64, 5, stride=1, padding=2)
+        self.pool1 = nn.MaxPool2d(2,2)
+        self.linearForward1 = nn.Linear(64*7*7, 1024)
+        self.linearForward2 = nn.Linear(1024, 512)
+        self.linearForward3 = nn.Linear(512, 10)
         self.linearForward4 = nn.Linear(10, numOfClasses)
 
     def forward(self, X):
-        x = self.linearForward1(X)
+        x = self.conv1(X)
+        x = F.relu(x)
+        x = self.pool1(x)
+        x = self.conv2(x)
+        x = F.relu(x)
+        x = self.pool1(x)
+        x = x.view(-1, 64*7*7)
+        x = self.linearForward1(x)
         x = F.relu(x)
         x = self.linearForward2(x)
         x = F.relu(x)
@@ -48,7 +58,8 @@ def test_accuracy(nn_model, X, Y):
 
 def main(epochs, batch_size, numOfClasses, loadPic):
     dataSet = set_up_data()
-    X = np.array(dataSet.train.images)
+    X = np.array(dataSet.train.images).reshape(55000, 1, 28,28)
+    print(X.shape)
     m = np.size(X, axis=0)
     Xsize = np.size(X, axis=1)
 
@@ -66,7 +77,7 @@ def main(epochs, batch_size, numOfClasses, loadPic):
     Ybatch = {}
     for i in range(1, m):
         if (((i % batch_size) == 0)):
-            tempX = np.array(X[lastIndex:i, :])
+            tempX = np.array(X[lastIndex:i, :, :, :])
             tempY = np.array(Y[lastIndex:i])
             Xbatch["batch" + str(batchNum)] = torch.FloatTensor(tempX)
             Ybatch["batch" + str(batchNum)] = torch.LongTensor(tempY)
